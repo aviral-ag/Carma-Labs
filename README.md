@@ -36,31 +36,52 @@ If you use the **Live Server** VS Code/Cursor extension, open this folder as you
 
 ## GitHub Pages deployment
 
-This site is configured as a **project site**, not a user site.
+This site is a **project site** deployed from the `Carma-Labs` repository.
 
-- **Repository name:** `sustainability-courses` (or any name that is *not* `yourusername.github.io`)
-- **Default URL:** `https://yourusername.github.io/sustainability-courses/`
-- **Custom domain:** `courses.yourdomain.com` (configured via the `CNAME` file)
+- **GitHub URL:** `https://aviral-ag.github.io/Carma-Labs/`
+- **Custom domain:** `https://carmalabs.info`
 
 ### Enable GitHub Pages
 
-1. Push this repository to GitHub under the name `sustainability-courses`.
-2. Go to the repo **Settings → Pages**.
-3. Under **Build and deployment**, set the source to **Deploy from a branch**.
-4. Select **Branch:** `main` and **Folder:** `/ (root)`.
-5. Click **Save**.
+1. Go to the repo **Settings → Pages**.
+2. Under **Build and deployment**, set the source to **Deploy from a branch**.
+3. Select **Branch:** `main` and **Folder:** `/ (root)`.
+4. Click **Save**.
 
-GitHub will publish the site from the root of the `main` branch.
+### Custom domain — carmalabs.info
 
-### Custom domain
+The `CNAME` file in this repo contains `carmalabs.info`. Complete setup in two places:
 
-When you have a real domain ready:
+#### Step 1: GitHub
 
-1. Create a `CNAME` file in the repo root containing your subdomain (e.g. `courses.yourdomain.com`).
-2. In **Settings → Pages**, enter the same custom domain and save.
-3. In your DNS provider, add a **CNAME** record pointing that subdomain to `yourusername.github.io`.
+1. Open **[Settings → Pages](https://github.com/aviral-ag/Carma-Labs/settings/pages)**.
+2. Under **Custom domain**, enter `carmalabs.info` and click **Save**.
+3. Remove any old domain (e.g. `aviralag.com`) if it still appears.
+4. Wait until GitHub shows **DNS check successful** (can take up to 24 hours).
+5. Enable **Enforce HTTPS** once the certificate is ready.
 
-Until then, the site is served at the default GitHub Pages URL (no `CNAME` file needed).
+#### Step 2: DNS (at your domain registrar)
+
+Add these records for `carmalabs.info`:
+
+**Apex domain (`carmalabs.info`)** — four **A** records on `@`:
+
+| Type | Host | Value |
+|------|------|-------|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+
+**Optional — `www` subdomain** — one **CNAME** record:
+
+| Type | Host | Value |
+|------|------|-------|
+| CNAME | `www` | `aviral-ag.github.io` |
+
+Do **not** CNAME the apex (`@`) to GitHub — use the A records above. Only `www` uses CNAME.
+
+After DNS propagates, the site will be live at **https://carmalabs.info** (and optionally **https://www.carmalabs.info**).
 
 ## Project structure
 
@@ -69,6 +90,7 @@ Until then, the site is served at the default GitHub Pages URL (no `CNAME` file 
 ├── courses.html
 ├── about.html
 ├── contact.html
+├── CNAME
 ├── _config.yml
 ├── assets/
 │   ├── css/style.css
