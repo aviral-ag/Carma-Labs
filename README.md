@@ -1,102 +1,145 @@
-# Sustainability Courses
+# Carma Labs
 
-Static website for a corporate sustainability and ESG courses platform. Built with pure HTML, CSS, and vanilla JavaScript — no build tools or backend required.
+Corporate sustainability and ESG courses platform — a static marketing site for professional education in environmental, social, and governance topics.
+
+**Live site:** [carmalabs.info](https://carmalabs.info)
+
+---
+
+## Overview
+
+Carma Labs helps professionals and organisations build practical ESG and sustainability capability through expert-led courses. This repository contains the full static website: home page, course catalog, about page, and contact form.
+
+| Page | Description |
+|------|-------------|
+| [Home](index.html) | Hero, stats, featured courses, value proposition, CTA |
+| [Courses](courses.html) | Filterable course catalog with 6 programmes |
+| [About](about.html) | Mission, story, team, partner logos |
+| [Contact](contact.html) | Contact form with client-side validation |
+
+---
+
+## Tech stack
+
+- **HTML5** — semantic markup, no frameworks
+- **CSS3** — custom design system (Inter, forest green palette)
+- **Vanilla JavaScript** — mobile nav, course filters, form validation
+- **GitHub Pages** — static hosting with custom domain
+
+No build step, no backend, no dependencies.
+
+---
+
+## Design
+
+- **Primary:** `#1A3C2E` (forest green)
+- **Accent:** `#C8A94A` (gold)
+- **Background:** `#F9F7F4` (warm off-white)
+- **Font:** [Inter](https://fonts.google.com/specimen/Inter) (400, 500, 600)
+- Sticky navigation, responsive hamburger menu, mobile-first layout
+
+---
 
 ## Local development
 
-This site **must be served over HTTP** — do not open `index.html` directly from Finder (the `file://` protocol will break navigation and assets).
-
-### Quick start
-
-From the project folder, run:
+The site must be served over HTTP. Do not open `index.html` directly from the file system.
 
 ```bash
+git clone https://github.com/aviral-ag/Carma-Labs.git
+cd Carma-Labs
 ./serve.sh
 ```
 
-Or manually (note the quotes — the folder name contains spaces):
+Open [http://localhost:8000](http://localhost:8000).
+
+Alternative:
 
 ```bash
-cd "/Users/aviral/Carma Labs Website"
 python3 -m http.server 8000
 ```
-
-Then open **[http://localhost:8000](http://localhost:8000)** in your browser.
 
 ### Troubleshooting
 
 | Problem | Fix |
 |---------|-----|
-| "Connection refused" at localhost | Run `./serve.sh` first — the server must stay running in Terminal |
-| Directory listing instead of the site | You started the server from the wrong folder. Use `./serve.sh` which always uses the project root |
-| Unstyled / blank page | Hard-refresh the browser (`Cmd+Shift+R`) and confirm the URL starts with `http://localhost`, not `file://` |
-| Port 8000 in use | Run `./serve.sh 8080` and open `http://localhost:8080` instead |
+| Connection refused | Run `./serve.sh` and keep the terminal open |
+| Directory listing | Start the server from the repo root |
+| Unstyled page | Hard-refresh (`Cmd+Shift+R`); use `http://localhost`, not `file://` |
+| Port 8000 in use | Run `./serve.sh 8080` |
 
-If you use the **Live Server** VS Code/Cursor extension, open this folder as your workspace root and click "Go Live" — it will serve from `index.html` on port 8000.
-
-## GitHub Pages deployment
-
-This site is a **project site** deployed from the `Carma-Labs` repository.
-
-- **GitHub URL:** `https://aviral-ag.github.io/Carma-Labs/`
-- **Custom domain:** `https://carmalabs.info`
-
-### Enable GitHub Pages
-
-1. Go to the repo **Settings → Pages**.
-2. Under **Build and deployment**, set the source to **Deploy from a branch**.
-3. Select **Branch:** `main` and **Folder:** `/ (root)`.
-4. Click **Save**.
-
-### Custom domain — carmalabs.info
-
-The `CNAME` file in this repo contains `carmalabs.info`. Complete setup in two places:
-
-#### Step 1: GitHub
-
-1. Open **[Settings → Pages](https://github.com/aviral-ag/Carma-Labs/settings/pages)**.
-2. Under **Custom domain**, enter `carmalabs.info` and click **Save**.
-3. Remove any old domain (e.g. `aviralag.com`) if it still appears.
-4. Wait until GitHub shows **DNS check successful** (can take up to 24 hours).
-5. Enable **Enforce HTTPS** once the certificate is ready.
-
-#### Step 2: DNS (at your domain registrar)
-
-Add these records for `carmalabs.info`:
-
-**Apex domain (`carmalabs.info`)** — four **A** records on `@`:
-
-| Type | Host | Value |
-|------|------|-------|
-| A | `@` | `185.199.108.153` |
-| A | `@` | `185.199.109.153` |
-| A | `@` | `185.199.110.153` |
-| A | `@` | `185.199.111.153` |
-
-**Optional — `www` subdomain** — one **CNAME** record:
-
-| Type | Host | Value |
-|------|------|-------|
-| CNAME | `www` | `aviral-ag.github.io` |
-
-Do **not** CNAME the apex (`@`) to GitHub — use the A records above. Only `www` uses CNAME.
-
-After DNS propagates, the site will be live at **https://carmalabs.info** (and optionally **https://www.carmalabs.info**).
+---
 
 ## Project structure
 
 ```
-├── index.html
-├── courses.html
-├── about.html
-├── contact.html
-├── CNAME
-├── _config.yml
+Carma-Labs/
+├── index.html          # Home
+├── courses.html        # Course catalog
+├── about.html          # About & team
+├── contact.html        # Contact form
+├── CNAME               # Custom domain (carmalabs.info)
+├── _config.yml         # GitHub Pages config
+├── serve.sh            # Local dev server
 ├── assets/
-│   ├── css/style.css
-│   ├── js/main.js
-│   └── images/
+│   ├── css/style.css   # Global styles & design system
+│   ├── js/main.js      # Nav, filters, form validation
+│   └── images/         # Image assets
 └── README.md
 ```
 
-All internal page links use relative paths (e.g. `./courses.html`) so navigation works both locally and on GitHub Pages.
+All internal links use relative paths (e.g. `./courses.html`) so navigation works locally and on GitHub Pages.
+
+---
+
+## Deployment
+
+This is a **GitHub Pages project site** (not a user site).
+
+| URL | Purpose |
+|-----|---------|
+| [carmalabs.info](https://carmalabs.info) | Production (custom domain) |
+| [aviral-ag.github.io/Carma-Labs](https://aviral-ag.github.io/Carma-Labs/) | GitHub Pages fallback |
+
+### GitHub Pages settings
+
+1. Go to **Settings → Pages**
+2. **Source:** Deploy from branch
+3. **Branch:** `main` / **Folder:** `/ (root)`
+4. **Custom domain:** `carmalabs.info`
+5. Wait for **DNS check successful**, then enable **Enforce HTTPS**
+
+### DNS (Squarespace + Google Workspace)
+
+Keep **Google Workspace MX and TXT records** for email. Replace Squarespace **website** defaults with GitHub records:
+
+**A records** (host `@`):
+
+```
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
+```
+
+**CNAME** (optional, for `www`):
+
+| Host | Points to |
+|------|-----------|
+| `www` | `aviral-ag.github.io` |
+
+Do not CNAME the apex (`@`) to GitHub — use A records only.
+
+---
+
+## Features
+
+- **Course filters** — filter catalog by category without page reload
+- **Contact form** — validates name, email, organisation, and message; shows inline success message (no backend)
+- **Responsive layout** — 3-column grids collapse to 2-column and single-column on smaller screens
+- **Accessible nav** — ARIA labels, keyboard-friendly mobile menu
+
+---
+
+## License
+
+© 2026 Carma Labs. All rights reserved.
