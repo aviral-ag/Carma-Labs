@@ -28,7 +28,7 @@ Browse the full catalog at **[carmalabs.info/courses.html](https://carmalabs.inf
 
 ---
 
-## Why Carma Labs
+## Why CARMA
 
 - **Industry experts** — courses led by practitioners with real-world ESG leadership experience
 - **Practical frameworks** — tools and templates you can apply immediately
@@ -41,8 +41,10 @@ Browse the full catalog at **[carmalabs.info/courses.html](https://carmalabs.inf
 | | |
 |---|---|
 | **Home** | Overview, featured courses, and how to get started |
+| **Why CARMA** | Mission, story, and team |
 | **Courses** | Full catalog with filters by category |
-| **About** | Our mission, story, and team |
+| **Projects** | Applied ESG and climate collaborations |
+| **Community** | Mentorship, forums, internships, and research |
 | **Contact** | Enquiries, partnerships, and course enrolment |
 
 ---

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Carma Labs</title>
+  <title>Community — Carma Labs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -44,50 +44,86 @@
   </nav>
 
   <main>
-    <section class="section contact-page">
+    <section class="page-hero section--alt">
+      <div class="container page-hero__inner page-hero__inner--centered">
+        <h1 class="page-hero__title">The CARMA Community</h1>
+        <p class="page-hero__subtext">A network for learners, mentors, and practitioners building the next generation of sustainability leaders.</p>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="container">
-        <h1 class="contact-page__heading">Get In Touch</h1>
+        <h2 class="section-heading">What We Offer</h2>
+        <div class="offerings-grid">
+          <article class="offering-card">
+            <h3 class="offering-card__title">Mentorship</h3>
+            <p class="offering-card__text">Connect with industry mentors for career guidance, project feedback, and ESG pathway advice.</p>
+          </article>
+          <article class="offering-card">
+            <h3 class="offering-card__title">Forums &amp; Peer Learning</h3>
+            <p class="offering-card__text">Discussion spaces for climate policy, reporting standards, and campus sustainability practice.</p>
+          </article>
+          <article class="offering-card">
+            <h3 class="offering-card__title">Internship Repository</h3>
+            <p class="offering-card__text">Browse curated internship briefs and past placements with sustainability-focused employers.</p>
+          </article>
+          <article class="offering-card">
+            <h3 class="offering-card__title">Research Collaboration</h3>
+            <p class="offering-card__text">Join applied research projects spanning climate data, governance, and community impact.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <div class="contact-layout">
-          <div class="contact-form-wrap">
-            <form class="contact-form" id="contact-form" novalidate>
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" autocomplete="name">
-                <span class="form-error" id="name-error"></span>
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" autocomplete="email">
-                <span class="form-error" id="email-error"></span>
-              </div>
-              <div class="form-group">
-                <label for="organisation">Organisation</label>
-                <input type="text" id="organisation" name="organisation" autocomplete="organization">
-                <span class="form-error" id="organisation-error"></span>
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5"></textarea>
-                <span class="form-error" id="message-error"></span>
-              </div>
-              <button type="submit" class="btn btn--green">Submit</button>
-              <p class="form-success" id="form-success" hidden>Thank you for reaching out. We'll get back to you within 24 hours.</p>
-            </form>
-          </div>
+    <section class="stats-bar" aria-label="Community statistics">
+      <div class="container stats-bar__inner">
+        <div class="stat">
+          <span class="stat__number">1,200+</span>
+          <span class="stat__label">Members</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">85</span>
+          <span class="stat__label">Mentors</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">12</span>
+          <span class="stat__label">Chapters</span>
+        </div>
+      </div>
+    </section>
 
-          <aside class="contact-details">
-            <h2 class="contact-details__title">Contact Details</h2>
-            <div class="contact-details__item">
-              <span class="contact-details__label">Email</span>
-              <a href="mailto:hello@carmlabs.com">hello@carmlabs.com</a>
-            </div>
-            <div class="contact-details__item">
-              <span class="contact-details__label">LinkedIn</span>
-              <a href="#" target="_blank" rel="noopener noreferrer">linkedin.com/company/carma-labs</a>
-            </div>
-            <p class="contact-details__note">We respond within 24 hours on business days. For course enrolment enquiries, include the course name in your message.</p>
-          </aside>
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-heading">Member Spotlights</h2>
+        <div class="spotlight-grid">
+          <article class="spotlight-card">
+            <p class="spotlight-card__quote">“CARMA gave me the frameworks — and the network — to land my first ESG analyst role.”</p>
+            <p class="spotlight-card__name">Ananya R.</p>
+            <p class="spotlight-card__role">ESG Analyst</p>
+          </article>
+          <article class="spotlight-card">
+            <p class="spotlight-card__quote">“Mentoring students here keeps me close to emerging climate talent and fresh research.”</p>
+            <p class="spotlight-card__name">Dev M.</p>
+            <p class="spotlight-card__role">Industry Mentor</p>
+          </article>
+          <article class="spotlight-card">
+            <p class="spotlight-card__quote">“Our campus chapter turned a carbon audit into a live curriculum project in one semester.”</p>
+            <p class="spotlight-card__name">Sara K.</p>
+            <p class="spotlight-card__role">Chapter Lead</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="community-cta">
+      <div class="container community-cta__inner">
+        <h2 class="community-cta__title">Join the Community</h2>
+        <p class="community-cta__text">Connect with mentors, explore internships, and collaborate on real-world sustainability projects.</p>
+        <a href="./contact.html" class="btn btn--white">Get Involved</a>
+        <div class="community-cta__socials">
+          <a href="#" class="btn btn--ghost-light">LinkedIn</a>
+          <a href="#" class="btn btn--ghost-light">Instagram</a>
+          <a href="./index.html" class="btn btn--ghost-light">Website</a>
         </div>
       </div>
     </section>

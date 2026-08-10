@@ -42,6 +42,14 @@
     }
   });
 
+  document.querySelectorAll(".section-strip a").forEach(function (link) {
+    var linkPage = link.getAttribute("href").split("/").pop();
+
+    if (linkPage === currentPage) {
+      link.classList.add("is-active");
+    }
+  });
+
   /* Course filter */
   var filterButtons = document.querySelectorAll(".filter-btn");
   var catalogCards = document.querySelectorAll(".course-grid--catalog .course-card");
