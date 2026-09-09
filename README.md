@@ -4,7 +4,7 @@
 
 Understand deeply. Think consciously. Act with purpose.
 
-CARMA makes learning meaningful by connecting knowledge with real-world action — helping people understand today and shape what comes next.
+CARMA makes learning meaningful by connecting knowledge with real-world action.
 
 ---
 
@@ -12,17 +12,11 @@ CARMA makes learning meaningful by connecting knowledge with real-world action �
 
 | | |
 |---|---|
-| **Home** | Vision, what we do, education pathways, recent notes |
+| **Home** | Hero, pathways, story, notes, research |
 | **Education** | Programmes for students, professionals, and teams |
-| **Research** | Open notes, applied projects, collaborations |
+| **Research** | Open notes and collaborations |
 | **Blog** | Essays and field notes |
 | **Get in Touch** | Enquiries and partnerships |
-
----
-
-## Brand
-
-Visual identity follows the CARMA Brand Guidelines: terracotta, soft sand, deep earth, rooted olive, and sage — with Merriweather Sans for headlines and Onest for interface type.
 
 ---
 

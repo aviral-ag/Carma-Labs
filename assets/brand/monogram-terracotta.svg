@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 465.9 474.94">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-3);
+      }
+
+      .cls-2 {
+        fill: #652a16;
+      }
+
+      .cls-3 {
+        stroke-width: 20px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke: #d7d0bd;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        stroke-width: 22px;
+      }
+    </style>
+    <filter id="drop-shadow-3" x="18.53" y="28.29" width="429.12" height="429.12" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#231f20" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <circle class="cls-2" cx="226.11" cy="235.77" r="199.46"/>
+  </g>
+  <g>
+    <line class="cls-3" x1="159.64" y1="195.6" x2="300.88" y2="195.6"/>
+    <line class="cls-3" x1="230.26" y1="195.6" x2="230.26" y2="300.43"/>
+    <ellipse class="cls-4" cx="189.24" cy="258.74" rx="36.86" ry="20.64"/>
+    <ellipse class="cls-4" cx="271.28" cy="258.74" rx="36.86" ry="20.64"/>
+  </g>
+</svg>
