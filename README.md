@@ -2,22 +2,12 @@
 
 **[carmalabs.info](https://carmalabs.info)**
 
-Understand deeply. Think consciously. Act with purpose.
+A research prospectus for small language models of water, air, land, and biodiversity, with carbon read across all four.
 
-CARMA makes learning meaningful by connecting knowledge with real-world action.
+Working titles: **Nabha** (water), **Vayu** (air), **Abha** (land), and **Indie** (biodiversity).
 
----
-
-## Pages
-
-| | |
-|---|---|
-| **Home** | Hero, pathways, story, notes, research |
-| **Education** | Programmes for students, professionals, and teams |
-| **Research** | Open notes and collaborations |
-| **Blog** | Essays and field notes |
-| **Get in Touch** | Enquiries and partnerships |
+The site is a single page: the argument, the models, the open questions, and a way to join the research team.
 
 ---
 
-© 2026 CARMA. All rights reserved.
+© 2026 CARMA Labs.

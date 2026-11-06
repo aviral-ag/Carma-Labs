@@ -3,147 +3,278 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CARMA — Understand deeply. Act with purpose.</title>
-  <meta name="description" content="CARMA makes learning meaningful by connecting knowledge with real-world action.">
+  <title>CARMA — Small language models for water, air, land, biodiversity, and carbon</title>
+  <meta name="description" content="A research prospectus from CARMA Labs. Working models Nabha, Abha, Vayu, and Indie, for water, air, land, and biodiversity, with carbon read across all four.">
+  <meta property="og:title" content="CARMA — Small language models for water, air, land, biodiversity, and carbon">
+  <meta property="og:description" content="A research prospectus. Working models: Nabha, Abha, Vayu, and Indie.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://carmalabs.info/">
   <link rel="icon" href="./assets/brand/monogram-terracotta.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#abstract">Skip to the thesis</a>
+
   <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a href="./index.html" class="logo" aria-label="CARMA home">
+    <nav class="nav" aria-label="Thesis">
+      <a href="#top" class="logo" aria-label="CARMA, back to the title">
         <img class="logo__wordmark" src="./assets/brand/wordmark-nav.svg" alt="CARMA">
       </a>
-      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+      <button class="nav-toggle" type="button" aria-label="Open sections" aria-expanded="false" aria-controls="nav-links">
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
       </button>
-      <ul class="nav-links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./education.html">Education</a></li>
-        <li><a href="./research.html">Research</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Get in Touch</a></li>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#argument">Argument</a></li>
+        <li><a href="#models">Models</a></li>
+        <li><a href="#questions">Questions</a></li>
+        <li class="nav-join"><a href="#join">Join the team</a></li>
       </ul>
-      <a href="./contact.html" class="btn btn--primary nav-cta">Get in Touch</a>
+      <a href="#join" class="btn btn--primary nav-cta">Join the team</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero__media" aria-hidden="true"></div>
-      <div class="hero__pattern" aria-hidden="true"></div>
-      <img class="hero__arc" src="./assets/brand/arc.svg" alt="" aria-hidden="true">
-      <div class="hero__inner">
-        <p class="hero__eyebrow">Ideas create action. Action creates impact.</p>
-        <h1 class="hero__title">Understand deeply. Act with purpose.</h1>
-        <p class="hero__lede">CARMA makes learning meaningful by connecting knowledge with real-world action — helping people understand today and shape what comes next.</p>
-        <div class="hero__actions">
-          <a href="./education.html" class="btn btn--primary">Explore Education</a>
-          <a href="./contact.html" class="btn btn--ghost">Get in Touch</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <p class="section-label">What CARMA does</p>
-        <h2 class="section-title">Learning that moves into practice</h2>
-        <p class="section-lede">Clear programmes, applied research, and notes — designed to be simple, grounded, and human.</p>
-        <div class="gallery-3">
-          <a class="gallery-card" href="./education.html">
-            <div class="gallery-card__media">
-              <img src="./assets/brand/monogram-olive.svg" alt="">
-            </div>
-            <p class="gallery-card__caption"><strong>Education</strong> Programmes in ESG, climate, and sustainability practice.</p>
-          </a>
-          <a class="gallery-card" href="./research.html">
-            <div class="gallery-card__media">
-              <img src="./assets/brand/monogram-terracotta.svg" alt="">
-            </div>
-            <p class="gallery-card__caption"><strong>Research</strong> Open notes and collaborations on real problems.</p>
-          </a>
-          <a class="gallery-card" href="./blog.html">
-            <div class="gallery-card__media">
-              <img src="./assets/brand/monogram-earth.svg" alt="">
-            </div>
-            <p class="gallery-card__caption"><strong>Blog</strong> Essays and field notes written to be useful.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--sand">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <p class="section-label">Research</p>
-            <h2 class="section-title">Open notes. Real problems.</h2>
-            <p class="section-lede">Applied work at the intersection of learning, climate, and organisational practice.</p>
+  <main id="top">
+    <section class="cover" aria-labelledby="thesis-title">
+      <div class="container cover__grid">
+        <div class="cover__titleblock">
+          <p class="eyebrow">CARMA Labs · Research prospectus · November 2026</p>
+          <h1 id="thesis-title">Small language models for water, air, land, biodiversity, and carbon.</h1>
+          <p class="cover__epigraph">Four working models. One shared account of carbon.</p>
+          <p class="cover__lede">Nabha, Abha, Vayu, and Indie are provisional names for a research programme. This page is the thesis they belong to. It states the argument, the domains, and the questions. It does not report results.</p>
+          <div class="cover__actions">
+            <a href="#abstract" class="btn btn--primary">Read the abstract</a>
+            <a href="#models" class="btn btn--outline">The four models</a>
           </div>
-          <a href="./research.html" class="btn btn--outline">View research</a>
         </div>
-        <div class="list-rows">
-          <a class="list-row" href="./research.html">
-            <span class="list-row__date">2026</span>
-            <span class="list-row__title">Campus Carbon Baseline — methods and lessons</span>
-          </a>
-          <a class="list-row" href="./research.html">
-            <span class="list-row__date">Ongoing</span>
-            <span class="list-row__title">SME ESG readiness: a lightweight toolkit</span>
-          </a>
-          <a class="list-row" href="./research.html">
-            <span class="list-row__date">2026</span>
-            <span class="list-row__title">What action literacy looks like in practice</span>
-          </a>
+        <nav class="contents" aria-label="Contents">
+          <p class="contents__label">Contents</p>
+          <ol>
+            <li><a href="#abstract"><span>01</span> Abstract</a></li>
+            <li><a href="#argument"><span>02</span> The argument</a></li>
+            <li><a href="#models"><span>03</span> The models</a></li>
+            <li><a href="#questions"><span>04</span> Open questions</a></li>
+            <li><a href="#join"><span>05</span> Join the research team</a></li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section" id="abstract" aria-labelledby="abstract-title">
+      <div class="container prose-grid">
+        <header class="section-kicker">
+          <p class="section-num">01</p>
+          <h2 id="abstract-title">Abstract</h2>
+        </header>
+        <div class="abstract">
+          <p>Earth systems are local, physical, and unevenly observed. A general language model can talk about a river, an airshed, a soil, and a species in the same breath. It cannot be held to any of them. CARMA is a research programme to build small language models that stay inside a domain: <strong>Nabha</strong> for water, <strong>Vayu</strong> for air, <strong>Abha</strong> for land, and <strong>Indie</strong> for biodiversity.</p>
+          <p>Carbon is not given a fifth model. Carbon moves through water, air, land, and living systems, so it is read as a shared account across the four. The models are small on purpose. A small model can be trained, evaluated, and argued with by a research group. Its errors can be traced to a dataset, a place, and a question.</p>
+          <p class="abstract__close">The names are working titles. Vayu keeps its meaning — wind. The others are assigned here and can move. The domains will not.</p>
+          <p class="keywords"><span>Keywords</span> small language models, hydrology, atmosphere, land systems, biodiversity, carbon, earth observation</p>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--sand" id="argument" aria-labelledby="argument-title">
+      <div class="container prose-grid">
+        <header class="section-kicker">
+          <p class="section-num">02</p>
+          <h2 id="argument-title">The argument</h2>
+        </header>
+        <div class="claims">
+          <article class="claim">
+            <p class="claim__num">I</p>
+            <h3>A useful model of the Earth is a model of a domain.</h3>
+            <p>Nabha, Vayu, Abha, and Indie are separate so that each one can be tested by the science it claims. A model for water is judged on water. A model for biodiversity is judged on living systems. Fluency outside the domain is not evidence.</p>
+          </article>
+          <article class="claim">
+            <p class="claim__num">II</p>
+            <h3>Small is a research decision, not a compromise.</h3>
+            <p>The aim is a model a specialist can argue with, not a model that stands in for the specialist. Size is part of the method. A research group should be able to train the model, read it, repeat the work, and say where it fails.</p>
+          </article>
+          <article class="claim">
+            <p class="claim__num">III</p>
+            <h3>Carbon is read across the models.</h3>
+            <p>The four models stay apart so their errors stay interpretable. Carbon is where they are asked to speak to one another: the same element, four domains, one account. A single general climate model would blur that.</p>
+          </article>
+          <article class="claim">
+            <p class="claim__num">IV</p>
+            <h3>Nothing on this page is a finding.</h3>
+            <p>This is a prospectus. Training data, evaluations, and errors will be published with the models, as studies that name their places and their limits. Until then, the work is the argument and the questions below.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="models" aria-labelledby="models-title">
       <div class="container">
-        <div class="section-head">
+        <header class="section-intro">
+          <p class="section-num">03</p>
+          <h2 id="models-title">The models</h2>
+          <p class="section-lede">Shown in Earth-system order. Each model has a written domain. Questions outside that domain are out of scope, not failures of fluency.</p>
+        </header>
+
+        <div class="models">
+          <article class="model" id="nabha">
+            <div class="model__index">
+              <p class="model__num">01</p>
+              <h3>Nabha</h3>
+              <p class="model__domain">Water</p>
+              <p class="model__status">Working title</p>
+            </div>
+            <div class="model__body">
+              <p>Nabha is a small language model of water. Its scope is the hydrosphere as it is measured and written: watersheds, water quality, storage, and the water cycle. The name comes from <span lang="sa">नभ</span>, the sky that holds rain. People who work on water should be able to question it, and to see when it is wrong.</p>
+              <p class="model__scope">Watersheds · water quality · the water cycle</p>
+            </div>
+          </article>
+
+          <article class="model" id="vayu">
+            <div class="model__index">
+              <p class="model__num">02</p>
+              <h3>Vayu</h3>
+              <p class="model__domain">Air</p>
+              <p class="model__status">Working title</p>
+            </div>
+            <div class="model__body">
+              <p>Vayu is wind. The word is already the right one, so the model keeps it. Vayu is a small language model of air: what the atmosphere holds, how it moves, and how air quality is observed and described. It is not a weather product and not a general assistant. It is a research instrument for the air, sized so its answers can be checked against measurements.</p>
+              <p class="model__scope">Atmosphere · air quality · the moving air</p>
+            </div>
+          </article>
+
+          <article class="model" id="abha">
+            <div class="model__index">
+              <p class="model__num">03</p>
+              <h3>Abha</h3>
+              <p class="model__domain">Land</p>
+              <p class="model__status">Working title</p>
+            </div>
+            <div class="model__body">
+              <p>Abha is a small language model of land. <span lang="sa">आभा</span> is the light on a surface. The scope is soils, land cover, and land use — the ground as a physical system and as a record of how people live on it. Abha stays with the land. It does not speak for the species that live there. That is Indie’s work.</p>
+              <p class="model__scope">Soils · land cover · land use</p>
+            </div>
+          </article>
+
+          <article class="model" id="indie">
+            <div class="model__index">
+              <p class="model__num">04</p>
+              <h3>Indie</h3>
+              <p class="model__domain">Biodiversity</p>
+              <p class="model__status">Working title</p>
+            </div>
+            <div class="model__body">
+              <p>Indie is a small language model of biodiversity: species, habitats, and ecological communities. The name is a placeholder. It will be replaced when the research group chooses one that belongs to the science. Until then, Indie marks the part of the programme where living systems are studied on their own terms, rather than as a feature of a land or carbon model.</p>
+              <p class="model__scope">Species · habitats · ecological communities</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="carbon" id="carbon">
+        <div class="container carbon__grid">
           <div>
-            <p class="section-label">Blog</p>
-            <h2 class="section-title">What's new</h2>
-            <p class="section-lede">Short notes from the field — clear, grounded, and useful.</p>
+            <p class="carbon__kicker">Shared account</p>
+            <h3>Carbon</h3>
           </div>
-          <a href="./blog.html" class="btn btn--outline">All posts</a>
+          <div>
+            <p>Carbon has no model of its own in this thesis, and that is deliberate. It is stored and moved by water, air, land, and life. A fifth general model would blur the four domains in order to talk about all of them.</p>
+            <p>Each model is built so it can be asked a carbon question inside its own domain: carbon in water, carbon in air, carbon in soils and land use, carbon in living systems. The programme reads those answers together.</p>
+          </div>
         </div>
-        <div class="list-rows">
-          <a class="list-row" href="./blog.html">
-            <span class="list-row__date">Sep 8</span>
-            <span class="list-row__title">Understanding is not the same as action</span>
-          </a>
-          <a class="list-row" href="./blog.html">
-            <span class="list-row__date">Aug 21</span>
-            <span class="list-row__title">What ESG literacy should actually teach</span>
-          </a>
-          <a class="list-row" href="./blog.html">
-            <span class="list-row__date">Jul 14</span>
-            <span class="list-row__title">Campus carbon baselines as living labs</span>
-          </a>
-        </div>
+      </div>
+    </section>
+
+    <section class="section" id="questions" aria-labelledby="questions-title">
+      <div class="container prose-grid">
+        <header class="section-kicker">
+          <p class="section-num">04</p>
+          <h2 id="questions-title">Open questions</h2>
+        </header>
+        <ol class="questions">
+          <li>
+            <h3>How small can a useful model be?</h3>
+            <p>What is the smallest model that still helps a hydrologist, an atmospheric scientist, a land scientist, or an ecologist — and where does further size stop changing the science?</p>
+          </li>
+          <li>
+            <h3>What is the model allowed to see?</h3>
+            <p>Which observations belong in the training of Nabha, Vayu, Abha, and Indie, and which must be held back so the model can be tested against a place it has not already memorised?</p>
+          </li>
+          <li>
+            <h3>How does carbon cross four models?</h3>
+            <p>How should a carbon question be asked of four separate models without forcing them into one voice, and how should the four answers be read when they disagree?</p>
+          </li>
+          <li>
+            <h3>What counts as an evaluation?</h3>
+            <p>A public test for this work has to be judged by a domain and a place, not by a general leaderboard. What does that record look like, and who is qualified to say the model failed?</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--join" id="join" aria-labelledby="join-title">
+      <div class="container join-grid">
+        <header class="section-kicker">
+          <p class="section-num">05</p>
+          <h2 id="join-title">Join the research team</h2>
+          <p>CARMA is forming the group that will build this thesis. We are looking for people who work on water, air, land, biodiversity, carbon, or the methods around small models: data, evaluation, and scientific writing.</p>
+          <p>This is an expression of interest, not an application with a deadline. Sending it opens an email to <a href="mailto:hello@carmalabs.info">hello@carmalabs.info</a>. We read every note.</p>
+        </header>
+
+        <form class="join-form" id="join-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="form-error" id="email-error"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="affiliation">Affiliation</label>
+            <input type="text" id="affiliation" name="affiliation" autocomplete="organization" placeholder="University, lab, company, or independent" required>
+            <span class="form-error" id="affiliation-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="interest">Where you want to work</label>
+            <select id="interest" name="interest" required>
+              <option value="">Select a domain</option>
+              <option>Nabha — Water</option>
+              <option>Vayu — Air</option>
+              <option>Abha — Land</option>
+              <option>Indie — Biodiversity</option>
+              <option>Carbon, across the four models</option>
+              <option>Methods, data, and evaluation</option>
+              <option>Not sure yet</option>
+            </select>
+            <span class="form-error" id="interest-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="note">What you would contribute</label>
+            <textarea id="note" name="note" rows="5" required placeholder="A short note on your work, and what you would bring to the group."></textarea>
+            <span class="form-error" id="note-error"></span>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">Send an expression of interest</button>
+            <p class="form-hint">Your email app will open with this note addressed to the lab. Send it from there.</p>
+          </div>
+          <p class="form-success" id="form-success" hidden role="status"></p>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="./assets/brand/wordmark-on-dark.svg" alt="CARMA" class="footer-wordmark">
-      </div>
-      <div class="footer-links">
-        <a href="./education.html">Education</a>
-        <a href="./research.html">Research</a>
-        <a href="./blog.html">Blog</a>
-        <a href="./contact.html">Get in Touch</a>
-      </div>
-      <p class="copyright">&copy; 2026 CARMA. All rights reserved.</p>
+      <img src="./assets/brand/wordmark-on-dark.svg" alt="CARMA" class="footer-wordmark">
+      <p class="colophon">CARMA Labs · Research prospectus, November 2026. Nabha, Abha, Vayu, and Indie are working titles. <a href="mailto:hello@carmalabs.info">hello@carmalabs.info</a></p>
     </div>
   </footer>
 
